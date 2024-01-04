@@ -11,7 +11,8 @@ stdin.on('data', (data) => {
   }
   writeStream.write(data);
 });
-process.on('SIGINT', endFunc);
+
+process.on('SIGINT', exitFunc);
 
 function exitFunc() {
   stdout.write('See you!');
