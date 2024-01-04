@@ -14,7 +14,7 @@ let aboutFiles = function (file) {
       data.push(path.extname(file.name).slice(1));
       data.push((Math.round(stats.size/1024)) + 'Kb');
 
-      console.log(dat.join(' - '));
+      console.log(data.join(' - '));
     });
   }
 };
